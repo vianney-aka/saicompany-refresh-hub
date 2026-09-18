@@ -99,7 +99,12 @@
     radial-gradient(50% 50% at 88% 12%, var(--sun) 0%, transparent 60%),
     radial-gradient(60% 60% at 78% 88%, oklch(0.72 0.13 190) 0%, transparent 60%),
     radial-gradient(45% 45% at 25% 92%, oklch(0.55 0.09 220) 0%, transparent 60%),
-    linear-gradient(160deg, oklch(0.94 0.03 160) 0%, oklch(0.955 0.01 160) 45%, oklch(0.955 0.02 110) 100%);
+    linear-gradient(
+      160deg,
+      oklch(0.94 0.03 160) 0%,
+      oklch(0.955 0.01 160) 45%,
+      oklch(0.955 0.02 110) 100%
+    );
 }
 
 @layer base {
@@ -113,7 +118,10 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
   }
 }

@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 export const WHATSAPP_URL = "https://wa.me/2250787270900";
 export const PHONE_MAIN = "tel:0787270900";
+export const PHONE_INFOLINE = "tel:07834412";
 
 export function TopBar() {
   return (
@@ -13,7 +14,7 @@ export function TopBar() {
         </span>
         <span className="hidden items-center gap-4 sm:flex">
           <span>Abidjan · Cocody · Yopougon</span>
-          <a href={PHONE_MAIN} className="font-semibold text-sun">
+          <a href={PHONE_INFOLINE} className="font-semibold text-sun">
             Infoline 07 83 44 12
           </a>
         </span>
@@ -85,7 +86,8 @@ export function Footer() {
             <span className="font-display font-bold text-primary-foreground">SAICOMEDIA</span>
           </div>
           <p className="leading-relaxed">
-            Sécurité, surveillance et électricité solaire pour les particuliers et entreprises en Côte d'Ivoire.
+            Sécurité, surveillance et électricité solaire pour les particuliers et entreprises en
+            Côte d'Ivoire.
           </p>
         </div>
         <div>
@@ -119,7 +121,7 @@ export function Footer() {
           <ul className="space-y-2">
             <li>Abidjan, Côte d'Ivoire</li>
             <li>
-              <a href="tel:07834412">Infoline 07 83 44 12</a>
+              <a href={PHONE_INFOLINE}>Infoline 07 83 44 12</a>
             </li>
             <li>
               <a href="tel:0101014243">01 01 01 42 43</a>

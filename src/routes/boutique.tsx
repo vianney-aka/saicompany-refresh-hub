@@ -17,7 +17,10 @@ export const Route = createFileRoute("/boutique")({
         content:
           "Catalogue SAICOMEDIA : caméras IP et solaires, pointeuses biométriques, clôtures électrifiées, lampadaires solaires. Prix en FCFA, installation incluse à Abidjan.",
       },
-      { property: "og:title", content: "Boutique SAICOMEDIA — Équipements de sécurité en Côte d'Ivoire" },
+      {
+        property: "og:title",
+        content: "Boutique SAICOMEDIA — Équipements de sécurité en Côte d'Ivoire",
+      },
       {
         property: "og:description",
         content:
@@ -134,7 +137,8 @@ function Boutique() {
               Nos équipements, <span className="text-primary">installés</span> par nos techniciens.
             </h1>
             <p className="mt-5 max-w-xl text-lg text-muted-foreground">
-              Des prix clairs en FCFA, du matériel garanti 12 mois et la pose assurée par SAICOMEDIA.
+              Des prix clairs en FCFA, du matériel garanti 12 mois et la pose assurée par
+              SAICOMEDIA.
             </p>
           </div>
         </section>
@@ -183,7 +187,9 @@ function Boutique() {
                   ) : null}
                 </div>
                 <div className="flex flex-1 flex-col p-5">
-                  <div className="text-xs font-semibold uppercase tracking-wide text-primary">{p.category}</div>
+                  <div className="text-xs font-semibold uppercase tracking-wide text-primary">
+                    {p.category}
+                  </div>
                   <h2 className="mt-2 font-display text-lg font-semibold">{p.name}</h2>
                   <p className="mt-1 flex-1 text-sm text-muted-foreground">{p.desc}</p>
                   <div className="mt-5 flex items-center justify-between">
@@ -208,7 +214,9 @@ function Boutique() {
         <section className="bg-primary text-primary-foreground">
           <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-6 py-14 lg:flex-row lg:items-center">
             <div>
-              <h2 className="font-display text-3xl font-bold tracking-tight">Un besoin sur mesure ?</h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight">
+                Un besoin sur mesure ?
+              </h2>
               <p className="mt-2 text-primary-foreground/70">
                 Grands sites, entreprises, résidences : nous chiffrons votre projet sous 24h.
               </p>
