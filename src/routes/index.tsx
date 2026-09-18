@@ -234,7 +234,9 @@ function Categories() {
             key={s.title}
             className="rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary/20"
           >
-            <div className={`grid size-11 place-items-center rounded-xl text-xl ${s.tint}`}>{s.icon}</div>
+            <div className={`grid size-11 place-items-center rounded-xl ${s.tint}`}>
+              <s.icon className="size-5" strokeWidth={1.8} />
+            </div>
             <div className="mt-5 font-display text-lg font-semibold">{s.title}</div>
             <p className="mt-1 text-sm text-muted-foreground">{s.text}</p>
             <div className="mt-4 text-xs font-semibold text-primary">Voir →</div>
