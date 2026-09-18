@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Camera, DoorOpen, Zap, Lightbulb, type LucideIcon } from "lucide-react";
 import heroCamera from "@/assets/hero-camera.jpg";
 import productDome from "@/assets/product-dome.jpg";
 import productBiometric from "@/assets/product-biometric.jpg";
