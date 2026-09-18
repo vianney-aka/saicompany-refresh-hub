@@ -1,27 +1,26 @@
-# Sai Vision Refreshed
+# SAICOMEDIA — Sai Vision Refreshed
 
-https://saicomedia.com
-propose moi une refonte
+Site vitrine SAICOMEDIA : distribution et installation de matériel de sécurité,
+vidéosurveillance et solaire à Abidjan (Côte d'Ivoire).
 
-This project was built with [Lovable](https://lovable.dev).
+Construit avec [TanStack Start](https://tanstack.com/start), React 19,
+Tailwind CSS et [shadcn/ui](https://ui.shadcn.com/).
 
-**Live app**: https://saicompany-refresh-hub.lovable.app
+## Développement
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/25380e4f-5df8-4028-8231-89afbaceb118).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Nécessite [Bun](https://bun.sh) (ou Node.js/npm).
 
 ```sh
 git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+cd saicompany-refresh-hub
+bun install
+bun run dev
 ```
+
+## Scripts
+
+- `bun run dev` — serveur de développement
+- `bun run build` — build de production
+- `bun run preview` — prévisualise le build de production
+- `bun run lint` — ESLint
+- `bun run format` — Prettier

@@ -15,7 +15,8 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact SAICOMEDIA — Devis gratuit sous 24h" },
       {
         property: "og:description",
-        content: "Écrivez-nous sur WhatsApp ou par e-mail : audit gratuit et devis détaillé sous 24h à Abidjan.",
+        content:
+          "Écrivez-nous sur WhatsApp ou par e-mail : audit gratuit et devis détaillé sous 24h à Abidjan.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -25,13 +26,28 @@ export const Route = createFileRoute("/contact")({
 });
 
 const INFOS = [
-  { icon: Phone, title: "Téléphone", lines: ["07 87 27 09 00", "Infoline 07 83 44 12", "01 01 01 42 43"] },
+  {
+    icon: Phone,
+    title: "Téléphone",
+    lines: ["07 87 27 09 00", "Infoline 07 83 44 12", "01 01 01 42 43"],
+  },
   { icon: Mail, title: "E-mail", lines: ["abs@saicomedia.com"] },
-  { icon: MapPin, title: "Adresse", lines: ["Abidjan, Côte d'Ivoire", "Interventions Cocody · Yopougon · régions"] },
+  {
+    icon: MapPin,
+    title: "Adresse",
+    lines: ["Abidjan, Côte d'Ivoire", "Interventions Cocody · Yopougon · régions"],
+  },
   { icon: Clock, title: "Horaires", lines: ["Lun – Sam : 8h – 18h", "Assistance technique 24/7"] },
 ];
 
-const SUBJECTS = ["Caméras & surveillance", "Alarme", "Contrôle d'accès", "Clôture / portail", "Solaire", "Autre"];
+const SUBJECTS = [
+  "Caméras & surveillance",
+  "Alarme",
+  "Contrôle d'accès",
+  "Clôture / portail",
+  "Solaire",
+  "Autre",
+];
 
 function Contact() {
   const [name, setName] = useState("");
@@ -151,7 +167,9 @@ function Contact() {
             ))}
             <div className="mesh rounded-2xl p-6">
               <div className="font-display text-lg font-semibold">Urgence ou panne ?</div>
-              <p className="mt-2 text-sm text-muted-foreground">Appelez-nous, un technicien vous rappelle.</p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Appelez-nous, un technicien vous rappelle.
+              </p>
               <a
                 href={PHONE_MAIN}
                 className="mt-4 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground"
