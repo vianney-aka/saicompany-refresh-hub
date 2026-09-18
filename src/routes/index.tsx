@@ -189,28 +189,28 @@ function Hero() {
   );
 }
 
-const SOLUTIONS = [
+const SOLUTIONS: { icon: LucideIcon; tint: string; title: string; text: string }[] = [
   {
-    icon: "📹",
-    tint: "bg-secondary",
+    icon: Camera,
+    tint: "bg-secondary text-primary",
     title: "Caméras IP & solaires",
     text: "Surveillance 4K, vision nocturne, alerte mobile.",
   },
   {
-    icon: "🚪",
-    tint: "bg-sun/15",
+    icon: DoorOpen,
+    tint: "bg-sun/15 text-primary",
     title: "Contrôle d'accès",
     text: "Pointeuses biométriques, badges, visiophones.",
   },
   {
-    icon: "⚡",
-    tint: "bg-mint/15",
+    icon: Zap,
+    tint: "bg-mint/15 text-primary",
     title: "Clôtures & portails",
     text: "Clôtures électrifiées et portails motorisés.",
   },
   {
-    icon: "💡",
-    tint: "bg-sun/15",
+    icon: Lightbulb,
+    tint: "bg-sun/15 text-primary",
     title: "Solaire & alarmes",
     text: "Lampadaires solaires, alarmes et visioconférence.",
   },
